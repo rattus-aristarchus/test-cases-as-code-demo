@@ -13,7 +13,7 @@ def test_test_cases_as_code():
 @allure.feature("Feature")
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.tag("example")
-@allure.label(LabelType.OWNER, "mlankin")
+@allure.label("owner", "mlankin")
 @allure.manual(True)
 def test_demo_manual():
     with allure.step("Демонстрационный шаг"):
