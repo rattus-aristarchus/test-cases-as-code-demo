@@ -1,6 +1,6 @@
 import allure
 
-from test_cases_as_code import get_message
+from src.test_cases_as_code import get_message
 
 
 def test_test_cases_as_code():
