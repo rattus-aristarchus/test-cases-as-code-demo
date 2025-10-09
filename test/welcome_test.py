@@ -8,7 +8,7 @@ def test_test_cases_as_code():
         assert get_message() == "Hello from test-cases-as-code!"
 
 @allure.title("Demo manual test")
-@allure.label("manual", "true")
+@allure.manual
 def test_demo_manual():
     with allure.step("First step"):
         pass
