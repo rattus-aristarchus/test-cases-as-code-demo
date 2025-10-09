@@ -8,7 +8,7 @@ def test_test_cases_as_code():
         assert get_message() == "Hello from test-cases-as-code!"
 
 @allure.title("Демонстрационный ручной тест")
-@allure.manual
+@allure.manual(True)
 def test_demo_manual():
     with allure.step("Демонстрационный шаг"):
         pass
