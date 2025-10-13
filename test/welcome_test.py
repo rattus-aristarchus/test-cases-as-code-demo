@@ -4,9 +4,11 @@ from allure_commons.types import LabelType
 from src.test_cases_as_code import get_message
 
 
+@allure.manual(True)
 def test_test_cases_as_code():
     with allure.step("Welcome to Allure Report!"):
         assert get_message() == "Hello from test-cases-as-code!"
+
 
 @allure.title("Демонстрационный ручной тест")
 @allure.story("Story")
