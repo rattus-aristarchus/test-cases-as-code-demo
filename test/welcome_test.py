@@ -1,5 +1,7 @@
 import allure
+from faker import Faker
 
+fake = Faker()
 
 @allure.title("Демонстрационный ручной тест")
 @allure.story("Story")
@@ -12,6 +14,9 @@ def test_demo_manual():
     with allure.step("Демонстрационный шаг"):
         pass
     custom_step()
+
+    with allure.step(f"Шаг с генерируемым именем: {fake.name()}"):
+        pass
 
 
 @allure.step("Пользовательский шаг")
