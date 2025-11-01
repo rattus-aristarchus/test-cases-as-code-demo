@@ -25,3 +25,10 @@ def test_demo_manual():
 def test_demo_custom_steps():
     steps.custom_step()
     steps.second_step()
+
+
+@allure.title("Тест с вложением")
+@allure.manual(True)
+def test_demo_custom_steps():
+    with allure.step("Шаг с вложением"):
+        allure.attach("text/plain", "Текстовое вложение", name="attachment.txt")
