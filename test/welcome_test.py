@@ -29,13 +29,6 @@ def test_demo_custom_steps():
 
 @allure.title("Тест с вложением")
 @allure.manual(True)
-def test_demo_custom_steps():
+def test_demo_attachment():
     with allure.step("Шаг с вложением"):
         allure.attach("Текстовое вложение")
-
-
-@allure.title("Тест с ожидаемым результатом")
-@allure.manual(True)
-def test_demo_expected_result():
-    with allure.step("Шаг с ожидаемым результатом"):
-        assert 1 == 1
