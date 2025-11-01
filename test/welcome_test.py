@@ -31,4 +31,4 @@ def test_demo_custom_steps():
 @allure.manual(True)
 def test_demo_custom_steps():
     with allure.step("Шаг с вложением"):
-        allure.attach("text/plain", "Текстовое вложение", name="attachment.txt")
+        allure.attach("Текстовое вложение")
